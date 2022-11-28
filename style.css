@@ -24,7 +24,7 @@ body{
     align-items: center;
     width: 100%;
     min-height: 85vh;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .video-container{
@@ -33,8 +33,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    min-height: 65%;
+    width: 64%;
+    min-height: 68vh;
     border: 2px solid rgba(0,0,0,0.3);
 }
 
