@@ -25,6 +25,7 @@
        
        let gif = document.querySelector('.gif');
        let car = document.querySelector('.yellow-car');
+       let boundary
        console.log(gif,car);
        gif.onclick = () =>{
         car.style.animation = `none`;
@@ -32,7 +33,8 @@
         gif.classList.add('fade-up');
         setTimeout(()=>{
                 setTimeout(()=>{
-                    document.querySelector('.boundary').innerHTML = `<video preload class='green-video' autoplay muted src='/assets/green-remaining-video.mov'>`;
+
+                    document.querySelector('.boundary').innerHTML = `<video preload class='green-video' autoplay muted src='./assets/green-remaining-video.mov'>`;
                     setTimeout(()=>{
                         gif.style.display = `none`;
                         car.style.display = `none`;
