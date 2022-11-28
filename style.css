@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boundary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 85vh;
+    max-width: 700px;
+    border: 2px solid rgba(0,0,0,0.5);
+}
+
+.video-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    min-height: 65%;
+    border: 2px solid rgba(0,0,0,0.3);
+}
+
+.boundary img.gif{
+    width: 40%;
+    object-fit: contain; 
+    transition: 0.2s all ease;
+    opacity: 1;
+}
+
+.boundary img.yellow-car{
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    transition: 1s all ease;
+    transform: translateX(0) rotateY(0deg) rotateZ(0deg);
+    animation: carmovement 3s infinite;
+}
+
+@keyframes carmovement {
+    0%{
+        transform: translateX(75%);
+    }
+    25%{
+        transform: translateX(-75%);
+    }
+    26%{
+        transform: translateX(-75%) rotateY(0deg) ;
+        transform-origin:center;
+    }
+    50%{
+        transform: translateX(-75%) rotateY(180deg) ;
+        transform-origin:center;    
+    }
+    75%{
+        transform: translateX(75%) rotateY(180deg);
+        transform-origin:center;
+    }
+    76%{
+        transform: translateX(75%) rotateY(180deg);
+        transform-origin: center;
+    }
+    100%{
+        transform: translateX(75%) rotateY(0deg);
+        /* transform-origin: left; */
+    }
+}
+
+
+.come-to-center{
+        bottom: 0;
+}
+
+.fade-up{
+    opacity: 0 !important;
+}
+
+@keyframes standup {
+    0%{
+        transform:translateX(0%) rotateZ(0deg);
+    }
+    100%{
+        transform:translateX(0%) rotateZ(90deg);
+        transform-origin:90% 90%;
+    }
+    
+}
+
+.green-video{
+    width: 100%;
+    object-fit: cover;
+}
+

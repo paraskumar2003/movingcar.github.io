@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Marketing</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="boundary">
+
+            <div class="video-container">
+                <img class="gif" src="/assets/blue-liftoff.gif" alt=""/>
+                <img class="yellow-car trans" src="/assets/yellow-car.png" alt=""  />
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+       
+       let gif = document.querySelector('.gif');
+       let car = document.querySelector('.yellow-car');
+       console.log(gif,car);
+       gif.onclick = () =>{
+        car.style.animation = `none`;
+        car.classList.add('come-to-center');
+        gif.classList.add('fade-up');
+        setTimeout(()=>{
+                setTimeout(()=>{
+                    document.querySelector('.boundary').innerHTML = `<video preload class='green-video' autoplay muted src='/assets/green-remaining-video.mov'>`;
+                    setTimeout(()=>{
+                        gif.style.display = `none`;
+                        car.style.display = `none`;
+                    })    
+                        document.querySelector('.boundary').currentTime = 8;    
+                },300)    
+        },300)
+       }
+</script>
+</html>
