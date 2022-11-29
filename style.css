@@ -54,6 +54,12 @@ body{
     transform: translateX(0) rotateY(0deg) rotateZ(0deg);
     animation: carmovement 3s infinite;
 }
+.boundary h1{
+    font-family: 'Figtree',sans-serif;
+    font-weight: 700;
+    margin-top:35px;
+    font-size: 36px;
+}
 
 @keyframes carmovement {
     0%{
