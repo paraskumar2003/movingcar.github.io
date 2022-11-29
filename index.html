@@ -34,7 +34,7 @@
         setTimeout(()=>{
                 setTimeout(()=>{
 
-                    document.querySelector('.boundary').innerHTML = `<video preload class='green-video' muted src='./assets/green-remaining-video.mov'>`;
+                    document.querySelector('.boundary').innerHTML = `<video playsinline="true" webkit-playsinline="true" preload class='green-video' muted src='./assets/green-remaining-video.mov'>`;
                         document.querySelector('.green-video').play();   
                         // document.querySelector('.green-video').currentTime = 6;    
                         setTimeout(()=>{
