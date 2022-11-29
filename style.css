@@ -61,6 +61,12 @@ body{
     font-size: 5vw;
 }
 
+@media(min-width:500px){
+    .boundary h1{
+        font-size: 36px;
+    }
+}
+
 @keyframes carmovement {
     0%{
         transform: translateX(75%);
