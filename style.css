@@ -38,6 +38,11 @@ body{
     border: 2px solid rgba(0,0,0,0.4);
     margin: 28px 5px 0 5px;
 }
+@media(max-width:600px){
+    .video-container{
+        width: 80%;
+    }
+}
 
 .boundary img.gif{
     width: 40%;
